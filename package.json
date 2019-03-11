@@ -6,9 +6,25 @@
   "author": "EdenCao <edencaox@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "prettier --write 'content/**/*.md'"
+    "lint": "prettier --write 'content/**/*.md'",
+    "lintWatch": "onchange content/**/* -- yarn lint",
+    "commit": "git-cz"
   },
   "devDependencies": {
+    "commitizen": "^3.0.7",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.3.1",
+    "onchange": "^5.2.0",
     "prettier": "^1.16.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
