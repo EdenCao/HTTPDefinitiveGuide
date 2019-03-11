@@ -1,0 +1,14 @@
+{
+  "name": "HTTPDefinitiveGuide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:EdenCao/HTTPDefinitiveGuide.git",
+  "author": "EdenCao <edencaox@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "prettier --write 'content/**/*.md'"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}
